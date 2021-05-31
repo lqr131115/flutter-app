@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:zufan/widgets/page_content.dart';
+import 'package:zufan/pages/Home/TabConsult/index.dart';
+import 'package:zufan/pages/Home/TabIndex/index.dart';
+import 'package:zufan/pages/Home/TabMine/index.dart';
+import 'package:zufan/pages/Home/TabSearch/index.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -22,10 +25,10 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
   static const List<Widget> barViewList = [
-    PageContent(name: '首页'),
-    PageContent(name: '搜索'),
-    PageContent(name: '咨询'),
-    PageContent(name: '我的'),
+    TabIndex(),
+    TabConsult(),
+    TabSearch(),
+    TabMine(),
   ];
   static const List<BottomNavigationBarItem> barItemList = [
     BottomNavigationBarItem(
