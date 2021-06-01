@@ -19,6 +19,7 @@ class InfoItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: MediaQuery.of(context).size.width / 5,
       margin: const EdgeInsets.only(bottom: 8),
       child: InkWell(
           onTap: () => print('InfoItem'),
@@ -31,38 +32,44 @@ class InfoItem extends StatelessWidget {
                       width: MediaQuery.of(context).size.width / 5,
                       height: MediaQuery.of(context).size.width / 5,
                       fit: BoxFit.fill)),
-              // Info
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Wrap(
-                    children: [
-                      Text(
-                        this.des,
-                        maxLines: 2,
-                      )
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        this.from,
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Color.fromRGBO(170, 170, 170, 0.8),
+              // house
+              Expanded(
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        alignment: Alignment.topLeft,
+                        child: Wrap(
+                          children: [
+                            Text(
+                              this.des,
+                              maxLines: 2,
+                            )
+                          ],
                         ),
                       ),
-                      Text(
-                        this.publishTime,
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Color.fromRGBO(170, 170, 170, 0.8),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          this.from,
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Color.fromRGBO(170, 170, 170, 0.8),
+                          ),
                         ),
-                      )
-                    ],
-                  ),
-                ],
+                        Text(
+                          this.publishTime,
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Color.fromRGBO(170, 170, 170, 0.8),
+                          ),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ],
           )),

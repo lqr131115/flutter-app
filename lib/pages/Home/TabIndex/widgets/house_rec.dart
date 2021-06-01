@@ -1,23 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 const List<Map> defaultHouseRecItems = [
   {
-    'src': 'lib/static/images/zhengzu.png',
+    'src':
+        'https://pic1.58cdn.com.cn/nowater/fangfe/n_v2000cca6cd1c74b6e9ec1d0ef1f7c0653.png',
     'title': '家住回龙观归属的感觉',
     'path': '/login'
   },
   {
-    'src': 'lib/static/images/hezu.png',
+    'src':
+        'https://pic4.58cdn.com.cn/nowater/fangfe/n_v21d44c2188c574da6b5e3b392aae3f516.png',
     'title': '宜居四五环大都市生活',
     'path': '/login'
   },
   {
-    'src': 'lib/static/images/duanzu.png',
+    'src':
+        'https://pic3.58cdn.com.cn/nowater/fangfe/n_v2c29c63f9470641cbbfa883a3115f4ad2.png',
     'title': '喧嚣三里墩繁华的背后',
     'path': '/login'
   },
-  {'src': 'lib/static/images/map.png', 'title': '比邻十号线地铁心连心', 'path': '/login'},
+  {
+    'src':
+        'https://pic2.58cdn.com.cn/nowater/fangfe/n_v2a07be6342c5742eb9eac342bd93a9856.png',
+    'title': '比邻十号线地铁心连心',
+    'path': '/login'
+  },
 ];
 
 List<Widget> _getHouseRecLists(List<Map> paramsList, BuildContext context) {
@@ -34,24 +41,27 @@ List<Widget> _getHouseRecLists(List<Map> paramsList, BuildContext context) {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Expanded(
-                      flex: 1,
-                      child: Text(
-                        item['title'],
-                        maxLines: 2,
-                        style: TextStyle(
-                          fontSize: 13
+                      flex: 3,
+                      child: Container(
+                        padding: const EdgeInsets.only(left: 10,right: 10),
+                        child: Text(
+                          item['title'],
+                          maxLines: 2,
+                          style: TextStyle(fontSize: 13),
                         ),
                       )),
                   Expanded(
-                      flex: 1,
+                      flex: 2,
                       child: Container(
                         alignment: Alignment.center,
                         padding: const EdgeInsets.all(5),
-                        child: Image.asset(
-                          item['src'],
-                          width: 40,
-                          height: 40,
-                          fit: BoxFit.fill,
+                        child: ClipOval(
+                          child: Image.network(
+                            item['src'],
+                            width: 40,
+                            height: 40,
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       ))
                 ],
@@ -102,11 +112,10 @@ class HouseRecommend extends StatelessWidget {
               spacing: 5,
               // space --> children垂直之间的空隙
               // runSpacing: 20,
-              crossAxisAlignment:WrapCrossAlignment.center,
+              crossAxisAlignment: WrapCrossAlignment.center,
               children: _getHouseRecLists(defaultHouseRecItems, context),
             )
           ],
         ));
   }
 }
-

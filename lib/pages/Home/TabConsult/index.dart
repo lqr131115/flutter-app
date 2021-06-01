@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:zufan/pages/Home/TabConsult/widgets/fliter_bar.dart';
+import 'package:zufan/pages/Home/TabConsult/widgets/house_list.dart';
 
 
 class TabConsult extends StatelessWidget {
@@ -10,9 +12,10 @@ class TabConsult extends StatelessWidget {
         title: Text('Consult'),
         centerTitle: true,
       ),
-      body: ListView(
+      body: Column(
         children: [
-          Text('这里是TabConsult')
+          FliterBar(),
+          HouseList(),
         ],
       ),
     );

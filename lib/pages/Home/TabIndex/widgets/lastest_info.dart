@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:zufan/widgets/info_item.dart';
 
 const List<Map> defaultLastestInfoItems = [
   {
     'imgsrc':
         'https://pic1.ajkimg.com/display/ajk/e1a9270f07839f936f417b3d6786b323/640x420c.jpg?t=1',
-    'des': ' 银湖公馆 毛坯两房 中间楼层 诚心卖',
+    'des': '银湖公馆 毛坯两房 中间楼层 诚心卖|银湖公馆 毛坯两房 中间楼层 诚心卖',
     'id': '/01',
     'from': '复兴网',
     'publishTime': '3天前',
@@ -14,7 +13,7 @@ const List<Map> defaultLastestInfoItems = [
   {
     'imgsrc':
         'https://pic1.ajkimg.com/display/ajk/e1a9270f07839f936f417b3d6786b323/640x420c.jpg?t=1',
-    'des': '送阁楼 排 全天采光 装修全送 无税急售',
+    'des': '送阁楼 排 全天采光|装修全送 无税急售|送阁楼 排 全天采光',
     'id': '/01',
     'from': '便民网',
     'publishTime': '一周前',
@@ -22,7 +21,7 @@ const List<Map> defaultLastestInfoItems = [
   {
     'imgsrc':
         'https://pic1.ajkimg.com/display/ajk/29ea8beb782747326a06cdada1f58a18/640x420c.jpg?t=1',
-    'des': '江城国际瑞景苑 精装两房 超高性价比',
+    'des': '江城国际瑞景苑 | 精装两房 超高性价比 | 精装两房 超高性价比',
     'id': '/01',
     'from': '智慧网',
     'publishTime': '一个月前',
@@ -30,7 +29,7 @@ const List<Map> defaultLastestInfoItems = [
   {
     'imgsrc':
         'https://pic1.ajkimg.com/display/ajk/d849bada73cad28ff71c6938cda79a60/640x420c.jpg?t=1',
-    'des': '附小萃文！中央城精装两房 楼层视野开阔',
+    'des': '附小萃文！中央城精装两房 | 楼层视野开阔 | 附小萃文！中央城精装两房 ',
     'id': '/01',
     'from': '安居网',
     'publishTime': '两周前',
