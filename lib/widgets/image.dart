@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_networkimage/provider.dart';
 
+/*
+  判断是网络图片还是本地图片
+  网络图片加载超时用缓存里面的
+ */
+
 final networkUriReg = RegExp('^http');
 final localUriReg = RegExp('^lib');
 
