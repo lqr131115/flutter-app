@@ -63,7 +63,7 @@ class SearchBar extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.only(left: 5),
               child: Image.asset(
-                'lib/static/images/location.png',
+                'assets/images/location.png',
                 width: 20,
                 height: 20,
               ),

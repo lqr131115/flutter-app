@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:zufan/pages/Home/TabConsult/widgets/custom_rent.dart';
 import 'package:zufan/utils/dialog.dart';
 import 'package:zufan/utils/window.dart';
 
@@ -206,13 +207,13 @@ List<Widget> _getWays(List<Map> paramsList, BuildContext context) {
 List<Widget> _getRents(List<Map> paramsList, BuildContext context) {
   return paramsList
       .map(
-        (item) => InkWell(
-          onTap: () => print('选择了Rent'),
-          child: Container(
-              padding: const EdgeInsets.all(10),
-              child: item['value'] == 'custom'
-                  ? Text('Custom')
-                  : Row(
+        (item) => item['value'] == 'custom'
+            ? CustomRent()
+            : InkWell(
+                onTap: () => print('选择了Rent'),
+                child: Container(
+                    padding: const EdgeInsets.all(10),
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
@@ -229,8 +230,7 @@ List<Widget> _getRents(List<Map> paramsList, BuildContext context) {
                             : Text('x')
                       ],
                     )),
-        ),
+              ),
       )
       .toList();
 }
-

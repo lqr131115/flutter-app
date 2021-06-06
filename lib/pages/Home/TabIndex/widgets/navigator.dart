@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 const List<Map> defaultNavItems = [
-  {'url': 'lib/static/images/zhengzu.png', 'title': '整租', 'path': '/login'},
-  {'url': 'lib/static/images/hezu.png', 'title': '合租', 'path': '/login'},
-  {'url': 'lib/static/images/duanzu.png', 'title': '短租', 'path': '/login'},
-  {'url': 'lib/static/images/zhaoshiyou.png', 'title': '找室友', 'path': '/login'},
-  {'url': 'lib/static/images/map.png', 'title': '地图找房', 'path': '/login'},
-  {'url': 'lib/static/images/vr.png', 'title': 'VR看房', 'path': '/login'},
+  {'url': 'assets/images/zhengzu.png', 'title': '整租', 'path': '/login'},
+  {'url': 'assets/images/hezu.png', 'title': '合租', 'path': '/login'},
+  {'url': 'assets/images/duanzu.png', 'title': '短租', 'path': '/login'},
+  {'url': 'assets/images/zhaoshiyou.png', 'title': '找室友', 'path': '/login'},
+  {'url': 'assets/images/map.png', 'title': '地图找房', 'path': '/login'},
+  {'url': 'assets/images/vr.png', 'title': 'VR看房', 'path': '/login'},
 ];
 
 class IndexNavigator extends StatelessWidget {

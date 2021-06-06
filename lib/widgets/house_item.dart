@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zufan/utils/colors.dart';
 
 const defalutItem = {
-  'imgsrc': 'lib/static/images/img_err.png',
+  'imgsrc': 'assets/images/img_err.png',
   'des': 'des',
   'location': 'location',
   'tag': 'tag',
@@ -57,7 +57,8 @@ class HouseItem extends StatelessWidget {
                           this.item['tag'],
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 12, color: ColorUtil.randonColor()),
+                          style: TextStyle(
+                              fontSize: 12, color: ColorUtil.randonColor()),
                         )),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
