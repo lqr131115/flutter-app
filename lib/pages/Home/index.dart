@@ -26,8 +26,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
   static const List<Widget> barViewList = [
     TabIndex(),
-    TabConsult(),
     TabSearch(),
+    TabConsult(),
     TabMine(),
   ];
   static const List<BottomNavigationBarItem> barItemList = [

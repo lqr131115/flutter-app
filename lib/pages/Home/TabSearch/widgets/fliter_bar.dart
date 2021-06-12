@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:zufan/pages/Home/TabConsult/widgets/custom_rent.dart';
-import 'package:zufan/utils/dialog.dart';
+import 'package:zufan/pages/Home/TabSearch/widgets/custom_rent.dart';
 import 'package:zufan/utils/window.dart';
 
 const List<Map> defaultArea = [];
